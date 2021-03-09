@@ -1,0 +1,42 @@
+img{
+    width: 100%;
+}
+
+.designs-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 80vh;
+}
+
+.design-items{
+    text-transform: uppercase;
+}
+
+@media (min-width:1101px) {
+    .main-content{
+        text-align: center;
+    }
+
+    .design-items{
+        font-size: 2rem;
+    }
+}
+
+.designs{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+
+.design-img{
+    padding: 0.5rem 0;
+    border-radius: 10px;
+}
+
+.section-title{
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 2rem 0;
+}

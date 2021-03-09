@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Showcase your personal style with clothing that is comfortable and fits well. No more 'off-the-rack' clothes for you.">
+    <meta name="keywords" content="designer clothing, custom-made clothing, custom made ethnic wear, hand embroidery, hand embroidery blouses, kurtis, chudhidhar, lehenga choli set, gowns, affordable designer clothing">
+    <link rel="stylesheet" href="./css/main-style.css">
+    <link rel="stylesheet" href="./css/contact-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous"/>
+    <title>Nihar | Custom made ethnic wear</title>
+</head>
+<body>
+
+    <header class="container header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">Nihar</a>
+            <div class="hamburger-menu">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+            <ul class="nav-list">
+                <li class="nav-link"><a href="index.html" class="nav-item">Home</a></li>
+                <li class="nav-link"><a href="about.html" class="nav-item">About</a></li>
+                <li class="nav-link"><a href="design-list.html" class="nav-item">Designs</a></li>
+                <li class="nav-link"><a href="testimonials.html" class="nav-item">Testimonials</a></li>
+                <li class="nav-link current"><a href="contact.html" class="nav-item">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Header/Nav section ends -->
+
+    <section class="main container">
+        <h2 class="contact-title">Get in touch with us.</h2>
+        <div class="contact-content">
+            <div class="contact-steps">
+                <p class="steps">
+                    Talk to our fashion designer about the specific designs you have in mind.
+                </p>
+                <p class="steps">
+                    We will get back to you with the timelines and prices.
+                </p>
+                <p class="steps">
+                    Our specialists will help make your designs a reality for you.
+                </p>
+            </div>
+            <form action="/" method="GET" class="contact-form" id="form">
+                <div class="contact-container">
+                    <div>
+                        <label for="first name">First Name</label>
+                        <input id="fname" name="fname" type="text" placeholder="First Name" required>
+                    </div>
+                    <div>
+                        <label for="last name">Last Name</label>
+                        <input id="lname" name="lname" type="text" placeholder="Last Name" required>
+                    </div>
+                </div>
+                <div class="contact-container">
+                    <div>
+                        <label for="email">Email</label>
+                        <input id="client-email" name="email" type="email" placeholder="Email address" required>
+                    </div>
+                    <div>
+                        <label for="phone number">Phone Number</label>
+                        <input id="client-number" type="number" name="phone number" placeholder="Phone number" minlength="10" required>
+                    </div>
+                </div>
+                <div> 
+                    <label>
+                        What are you specifically looking for?
+                    </label>
+                    <div class="contact-container">
+                        <div>
+                            <select name="designs" required>
+                                <option class="designs" value="design" selected disabled>Select design</option>
+                                <option class="designs" value="hand embroidery">Hand Embroidery</option>
+                                <option class="designs" value="blouses">Blouses</option>
+                                <option class="designs" value="chudhidhar/kurti">Chudhidhar/Kurti</option>
+                                <option class="designs" value="lehenga & choli">Lehenga & Choli</option>
+                                <option class="designs" value="gowns">Gowns</option>
+                                <option class="designs" value="skirts/palazoos">Skirts/Palazoos</option>
+                                <option class="designs" value="children's wear">Children's Wear</option>
+                            </select>
+                        </div>
+                        <div>
+                            <select name="quantity" id="quantity" required>
+                                <option value="quantity" selected disabled>Quantity</option>
+                                <option value="one">1</option>
+                                <option value="two">2</option>
+                                <option value="one-five">1-5</option>
+                                <option value="six-ten">6-10</option>
+                                <option value="more-than-ten">more than 10</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <label for="comments">Comments</label>
+                    </div>
+                    <div class="contact-container inputs">
+                        <div>
+                            <textarea name="message" id="message" cols="30" rows="30"></textarea>
+                        </div>
+                        <div>
+                            <button href="#" id="submit-button" class="cta-button button submit" type="submit">Submit</button>
+                            <button onclick="topFunction()" class="button-up">
+                                <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact form section ends -->
+
+    <div class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <i class="fa fa-times close" aria-hidden="true"></i>
+            </div>
+            <div class="modal-body">
+                <p class="steps">
+                    Thank you for reaching out to us. Our designer will contact you within 2-3 working days.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal section ends -->
+
+    <script src="main.js"></script>
+    
+</body>
+</html>
